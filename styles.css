@@ -524,9 +524,9 @@ ul {
 }
 
 .service-features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     margin-bottom: 24px;
     flex-grow: 1;
 }
@@ -534,11 +534,12 @@ ul {
 .service-features li {
     font-size: 0.82rem;
     font-weight: 500;
-    padding: 6px 14px;
+    padding: 10px 16px;
     border-radius: 100px;
     background: rgba(108, 92, 231, 0.06);
     border: 1px solid var(--border);
     color: var(--text-secondary);
+    text-align: center;
 }
 
 .service-footer {
